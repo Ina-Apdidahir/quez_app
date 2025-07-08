@@ -1,13 +1,13 @@
 ﻿
 
-        // Step 1: Collect user info
+        // Step 1:
         Console.Write("Enter your name: ");
         string name = Console.ReadLine();
 
         Console.Write("Enter your student ID: ");
         string studentId = Console.ReadLine();
 
-        // Step 2: Choose quiz type
+        // Step 2: 
         Console.WriteLine("\nChoose quiz type:");
         Console.WriteLine("1. Addition");
         Console.WriteLine("2. Subtraction");
@@ -30,7 +30,7 @@
         int score = 0;
         Random rand = new Random();
 
-        // Step 3: Ask 10 questions
+        // Step 3: 
         for (int i = 1; i <= 10; i++)
         {
             int num1 = rand.Next(1, 21); // 1 to 20
@@ -82,7 +82,7 @@
         
     }
 
-// Step 4: Display formatted results
+// Step 4: 
 double percentage = (score / 10.0) * 100;
 string grade = percentage switch
 {
@@ -94,7 +94,7 @@ string grade = percentage switch
     _ => "F"
 };
 
-int rank = 7; // Example rank
+int rank = 7; 
 
 // Final output to match image
 Console.WriteLine($"\n(ID: {studentId}) {name}");
