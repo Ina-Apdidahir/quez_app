@@ -94,12 +94,12 @@ string grade = percentage switch
     _ => "F"
 };
 
-int rank = 7; 
+int rank = score; 
 
 // Final output to match image
 Console.WriteLine($"\n(ID: {studentId}) {name}");
 Console.WriteLine($"Total Score: {score * 10}/100");
 Console.WriteLine($"Grade: {grade}\n");
 
-Console.WriteLine($"{"ID",-8}{"Magac",-10}{"Score",-8}{"Grade",-8}percentages");
-Console.WriteLine($"{studentId,-8}{name,-10}{rank,-8}{grade,-8}{percentage}%");
+Console.WriteLine($"{"ID",-8}{"Magac",-15}{"Score",-8}{"Grade",-8}percentages");
+Console.WriteLine($"{studentId,-8}{name,-15}{rank,-8}{grade,-8}{percentage}%");
